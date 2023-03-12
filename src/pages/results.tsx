@@ -16,13 +16,20 @@ export const getServerSideProps: GetServerSideProps<IResults> = async ({
   const searchTerm = query.search;
 
   if (searchTerm && searchTerm.length > 0) {
-    const response = await fetch(`http://localhost:3000/api/search`, {
-      body: JSON.stringify({ searchTerm }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
+    const response = await fetch(
+      `${
+        process.env.NEXTAUTH_URL
+          ? process.env.NEXTAUTH_URL
+          : 'http://localhost:3000'
+      }/api/search`,
+      {
+        body: JSON.stringify({ searchTerm }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      }
+    );
 
     searchResults = await response.json();
   }
