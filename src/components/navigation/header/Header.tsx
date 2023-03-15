@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import AuthButton from '~/components/buttons/auth-button/AuthButton';
+import AuthButton from '../../../components/buttons/auth-button/AuthButton';
 
 export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
 

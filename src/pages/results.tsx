@@ -16,6 +16,7 @@ export const getServerSideProps: GetServerSideProps<IResults> = async ({
   const searchTerm = query.search;
 
   if (searchTerm && searchTerm.length > 0) {
+    console.log(process.env.NEXTAUTH_URL);
     const response = await fetch(
       `${
         process.env.NEXTAUTH_URL
