@@ -31,7 +31,7 @@ const Search: React.FC<ISearch> = () => {
       />
       <div className="space-x-3">
         <button type="submit" className="btn-primary">
-          Google Search test
+          Google Search
         </button>
         <button type="submit" className="btn-primary">
           I&apos;m Feeling Lucky
