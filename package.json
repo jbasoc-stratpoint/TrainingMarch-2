@@ -15,7 +15,8 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "next": "^13.2.1",
@@ -46,6 +47,7 @@
     "@typescript-eslint/parser": "^5.53.0",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.17.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.34.0",
     "eslint-config-next": "^13.2.1",
@@ -63,5 +65,7 @@
   },
   "resolutions": {
     "webpack": "^5"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "my-t3-app@0.1.0"
 }
