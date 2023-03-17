@@ -5,6 +5,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook-css-modules-preset',
+    'storybook-addon-next-router',
     {
       name: '@storybook/addon-postcss',
       options: {
