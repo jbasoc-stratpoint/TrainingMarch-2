@@ -29,8 +29,8 @@ const Search: React.FC<ISearch> = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <div className="space-x-3">
-        <button type="submit" className="btn-primary">
-          Google Search
+        <button type="submit" className="border-t-cyan-50">
+          Google Search Test
         </button>
         <button type="submit" className="btn-primary">
           I&apos;m Feeling Lucky
